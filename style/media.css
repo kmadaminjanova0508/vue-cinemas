@@ -1,0 +1,86 @@
+@media (max-width: 768px) {
+    .header-nav-list{
+        flex-direction: column;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.61);
+        justify-content: center;
+        align-items: center;
+        top: -110%;
+        left: 0;
+        z-index: 999;
+        transition: 500ms;
+    }
+    .header-nav-list a{
+        font-size: 30px;
+    }
+    .burger{
+        display: block;
+    }
+    .burger:hover ~ .header-nav-list{
+        top: 0;
+    }
+}
+@media (max-width: 1140px) {
+    .series-main {
+        height: 100%;
+    }
+    .series-main img{
+        width: 100%;
+    }
+}
+@media (max-width: 830px) {
+    .series-main-content{
+        gap: 5px;
+    }
+    .series-main-content h3{
+        font-size: 22px;
+    }
+    .series-main-content p{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .series-main-content .link{
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 567px) {
+    .series-main-content h3{
+        font-size: 16px;
+    }
+    .series-main-content p{
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .series-main-content .link{
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    .series-cards-link > img{
+        width: 100%;
+    }
+    .series-cards-link{
+        height: 100%;
+    }
+    .series-cards-mini .series-cards-link{
+        width: 100%;
+    }
+    .header-content{
+        background: url(../img/header-bg-poster.jpg) rgba(7, 15, 25, 0.5);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    .trailer{
+        background: linear-gradient(90deg, #DEF7FF 0%, #F4FCFF 45.64%, rgb(255, 255, 255) 100.72%);
+    }
+    .trailer img{
+        width: 100%;
+    }
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+}
